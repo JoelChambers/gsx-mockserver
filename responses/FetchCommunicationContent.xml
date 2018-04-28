@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+      xmlns:glob="http://gsxws.apple.com/elements/global">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <glob:FetchCommunicationContentResponse>
+         <FetchCommunicationContentResponse>
+            <operationId>1234</operationId>
+            <communicationMessage>
+               <articleTitle>
+                   Always Reset the PRAM Before Using the Graphics Processor Test
+               </articleTitle>
+               <articleSummary>
+                   <p>As a reminder, reset the PRAM before using the 
+                   Graphics Processor Test.  Failure to do so could result in false 
+                   errors and incorrect reports of Dead on Arrival (DOA) 
+                   logic boards.</p>
+               </articleSummary>
+               <articleContent>Some big HTML content</articleContent>
+               <priority>Medium</priority>
+               <trainingUrl></trainingUrl>
+               <functionalRole>TECHNICIAN</functionalRole>
+               <functionalRole>MANAGER</functionalRole>
+               <productModel>
+                  <productLine>IMAC</productLine>
+                  <configCode>3EH</configCode>
+                  <configDescription>iMac (20-inch, Early 2009)</configDescription>
+               </productModel>
+               <languageCode>en</languageCode>
+            </communicationMessage>
+         </FetchCommunicationContentResponse>
+      </glob:FetchCommunicationContentResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

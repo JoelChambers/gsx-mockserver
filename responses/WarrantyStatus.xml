@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns3:WarrantyStatusResponse xmlns:ns2="http://asp.core.endpoint.ws.gsx.ist.apple.com/" xmlns:ns3="http://gsxws.apple.com/elements/global" xmlns:ns4="http://gsxws.apple.com/elements/core/asp" xmlns:ns5="http://gsxws.apple.com/elements/core/asp/am" xmlns:ns6="http://gsxws.apple.com/elements/core">
+         <WarrantyStatusResponse>
+            <operationId>5fdef1309390619199</operationId>
+            <warrantyDetailInfo>
+               <serialNumber>$serialNumber</serialNumber>
+               <warrantyStatus>Out Of Warranty (No Coverage)</warrantyStatus>
+               <coverageEndDate>08/24/11</coverageEndDate>
+               <coverageStartDate>08/25/10</coverageStartDate>
+               <daysRemaining>0</daysRemaining>
+               <estimatedPurchaseDate>08/25/10</estimatedPurchaseDate>
+               <globalWarranty/>
+               <purchaseCountry>United States</purchaseCountry>
+               <registrationDate>08/25/10</registrationDate>
+               <imageURL></imageURL>
+               <explodedViewURL></explodedViewURL>
+               <manualURL></manualURL>
+               <productDescription>iPhone 4</productDescription>
+               <configDescription>IPHONE 4,16GB BLACK</configDescription>
+               <slaGroupDescription/>
+               <ecorathFlag/>
+               <powerTrainFlag/>
+               <triCareFlag/>
+               <contractCoverageEndDate/>
+               <contractCoverageStartDate/>
+               <contractType/>
+               <laborCovered>Y</laborCovered>
+               <limitedWarranty>Y</limitedWarranty>
+               <partCovered>Y</partCovered>
+               <warrantyReferenceNo/>
+               <isPersonalized/>
+               <acPlusFlag>Y</acPlusFlag>
+               <isLoaner>Y</isLoaner>
+               <status>Available</status>
+               <activationLockStatus>Find My iPhone is Active. Find My iPhone must be turned off for Whole Unit Repairs.</activationLockStatus>
+               <consumerLawInfo>
+                  <serviceType>RFD</serviceType>
+                  <popMandatory>Y</popMandatory>
+                  <allowedPartType>NEW</allowedPartType>  
+               </consumerLawInfo>          
+              <messages>Some Message1</messages>
+              <messages>Some Message2</messages>             
+               <availableRepairStrategies>
+                 <availableRepairStrategy>Return Before Replace</availableRepairStrategy>
+                 <availableRepairStrategy>Mail-in</availableRepairStrategy>
+              </availableRepairStrategies>
+              <eligibleAppleCareContract>
+               	<appleCareContract>APP FOR RUBIX</appleCareContract>
+               	<eligibleAppleCareTiers>
+               	  <appleCareTier>
+               	  	<tierDesc>AppleCare+ Battery Only Repair</tierDesc>
+               	  	<tierPrice>USD 49.00</tierPrice> 
+               	  </appleCareTier>
+               	  <appleCareTier>
+               	  	<tierDesc>AppleCare+ Display Only Repair</tierDesc>
+               	  	<tierPrice>USD 69.00</tierPrice>              	  				
+               	  </appleCareTier>		
+               	 </eligibleAppleCareTiers>              	 
+               </eligibleAppleCareContract>
+            </warrantyDetailInfo>
+            <communicationMessage/>
+         </WarrantyStatusResponse>
+      </ns3:WarrantyStatusResponse>
+   </S:Body>
+</S:Envelope>

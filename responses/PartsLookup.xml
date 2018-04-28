@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns3:PartsLookupResponse xmlns:ns3="http://gsxws.apple.com/elements/core">
+         <PartsLookupResponse>
+            <operationId>AnK6lhP8j4Zw8hHYswYMGCthSKGnzy9O</operationId>
+            <parts>
+               <eeeCode>HG7F</eeeCode>
+               <isSerialized>N</isSerialized>
+               <laborTier>CON7</laborTier>
+               <partDescription>32GB, Black, GSM, iPhone 7, CI/AR</partDescription>
+               <partNumber>661-05427</partNumber>
+               <partType>Module</partType>
+               <pricingOptions>   
+                  <pricingOption>                
+                     <code>BATTR</code>
+                     <description>Battery Only Price</description>
+                     <price>129</price>
+                  </pricingOption>
+                  <pricingOption>
+                     <code>DSPLY</code>
+                     <description>Display Only Price</description>
+                     <price>109</price>
+                  </pricingOption>                  
+              </pricingOptions>    
+               <componentCode>B</componentCode>      
+            </parts>            
+            <parts>
+               <eeeCode>DC18,DC19</eeeCode>
+               <isSerialized>Y</isSerialized>
+               <laborTier></laborTier>
+               <partDescription>SVC,REMOTE</partDescription>
+               <partNumber>661-4448</partNumber>
+               <partType>Module</partType>
+               <componentCode>5</componentCode>
+               <originalPartNumber>661-2549</originalPartNumber>               
+            </parts>
+            <parts>
+               <eeeCode>59T</eeeCode>
+               <isSerialized>Y</isSerialized>
+               <laborTier></laborTier>
+               <partDescription>Power Adapter w/Plug, Ultra-Compact, USB, iPhone/iPod-US/CAN/JPN/TWN</partDescription>
+               <partNumber>661-4954</partNumber>
+               <partType>Module</partType>
+               <componentCode>3</componentCode>
+               <originalPartNumber></originalPartNumber>
+            </parts>
+            <parts>
+               <eeeCode></eeeCode>
+               <isSerialized>N</isSerialized>
+               <laborTier></laborTier>
+               <partDescription>SVC,STEREO HEADSET</partDescription>
+               <partNumber>661-5028</partNumber>
+               <partType>Module</partType>
+               <componentCode>6</componentCode>
+               <originalPartNumber>922-8629</originalPartNumber>
+            </parts>
+            <parts>
+               <eeeCode>HG7F</eeeCode>
+               <isSerialized>N</isSerialized>
+               <laborTier>CON7</laborTier>
+               <partDescription>32GB, Black, GSM, iPhone 7, CI/AR</partDescription>
+               <partNumber>661-05427</partNumber>
+               <partType>Module</partType>
+               <componentCode>B</componentCode>               
+            </parts>
+         </PartsLookupResponse>
+      </ns3:PartsLookupResponse>
+   </S:Body>
+</S:Envelope>

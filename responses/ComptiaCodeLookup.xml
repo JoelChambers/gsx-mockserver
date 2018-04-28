@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns5:ComptiaCodeLookupResponse xmlns:ns5="http://gsxws.apple.com/elements/global">
+         <ComptiaCodeLookupResponse>
+            <operationId>K7/KdqKveTGrWj3d1a+ZnvCHSgGXcnTF</operationId>
+            <comptiaInfo>
+               <comptiaGroup>
+                  <componentId>1</componentId>
+                  <componentName>Visual</componentName>
+                  <comptiaCodeInfo>
+                     <comptiaCode>X01</comptiaCode>
+                     <comptiaDescription>Memory Module (RAM) - Kernel Panic</comptiaDescription>
+                  </comptiaCodeInfo>
+                  <comptiaCodeInfo>
+                     <comptiaCode>X02</comptiaCode>
+                     <comptiaDescription>Memory Module (RAM) - No Boot</comptiaDescription>
+                  </comptiaCodeInfo>
+                  <comptiaCodeInfo>
+                     <comptiaCode>X03</comptiaCode>
+                     <comptiaDescription>Cables - Defective</comptiaDescription>
+                  </comptiaCodeInfo>
+                  <comptiaCodeInfo>
+                     <comptiaCode>X04</comptiaCode>
+                     <comptiaDescription>Remote - Inoperable</comptiaDescription>
+                  </comptiaCodeInfo>
+                  <comptiaCodeInfo>
+                     <comptiaCode>X05</comptiaCode>
+                     <comptiaDescription>Remote - Battery Life Too Short</comptiaDescription>
+                  </comptiaCodeInfo>
+                  <comptiaCodeInfo>
+                     <comptiaCode>X06</comptiaCode>
+                     <comptiaDescription>Memory Module (RAM) - Issues</comptiaDescription>
+                  </comptiaCodeInfo>
+               </comptiaGroup>
+               <comptiaModifier>
+                  <comptiaDescription>Not Applicable</comptiaDescription>
+                  <modifierCode>A</modifierCode>
+               </comptiaModifier>
+               <comptiaModifier>
+                  <comptiaDescription>Continuous</comptiaDescription>
+                  <modifierCode>B</modifierCode>
+               </comptiaModifier>
+               <comptiaModifier>
+                  <comptiaDescription>Intermittent</comptiaDescription>
+                  <modifierCode>C</modifierCode>
+               </comptiaModifier>
+            </comptiaInfo>
+         </ComptiaCodeLookupResponse>
+      </ns5:ComptiaCodeLookupResponse>
+   </S:Body>
+</S:Envelope>

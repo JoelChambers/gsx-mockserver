@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns4:CreateMailInRepairResponse xmlns:ns4="http://gsxws.apple.com/types/core/asp">
+         <CreateMailInRepairResponse>
+            <operationId>teHHI9DcQcLsTBtI7+jdLqmOFqFrRaMZ</operationId>
+            <repairConfirmation>
+               <confirmationNumber>G112477331</confirmationNumber>
+               <diagnosticDescription>Diagnostic Code Not Entered</diagnosticDescription>
+               <diagnosticEventNumber>800204262010153816</diagnosticEventNumber>
+               <diagnosticEventEndResult>FAILED</diagnosticEventEndResult>
+               <parts>
+                  <availability/>
+                  <currency>BRL</currency>
+                  <netPrice>BRL 11.50</netPrice>
+                  <partNumber>661-7654</partNumber>
+                  <partType/>
+                  <quantity>1</quantity>
+               </parts>
+               <totalFromOrder>BRL 38.00</totalFromOrder>
+               <icmsTax>3.00</icmsTax>
+               <pisTax>3.00</pisTax>
+               <ipiTax>3.00</ipiTax>
+               <icmsStTax>3.00</icmsStTax>
+               <cofinsTax>2.00</cofinsTax>
+               <issTax>2.00</issTax>
+               <vatTax>3.00</vatTax>
+               <vendorAddress>
+                  <county>Madera</county>
+                  <city>MEMPHIS</city>
+                  <companyName>AI</companyName>
+                  <countryName>United States</countryName>
+                  <state>TN</state>
+                  <street>6380 HOLMES ROAD</street>
+                  <vendorName>FLEXTRONICS</vendorName>
+                  <zipCode>38141</zipCode>
+               </vendorAddress>
+               <outcome>STOP/HOLD/MSG</outcome>
+               <messages>Some message1</messages>
+               <messages>Some message2</messages>
+               <availableRepairStrategies>
+                 <availableRepairStrategy>
+                 	Return Before Replace
+                 </availableRepairStrategy>
+                 <availableRepairStrategy>
+                 	Mail-in
+                 </availableRepairStrategy>
+              </availableRepairStrategies>
+            </repairConfirmation>
+         </CreateMailInRepairResponse>
+      </ns4:CreateMailInRepairResponse>
+   </S:Body>
+</S:Envelope>

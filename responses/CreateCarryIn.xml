@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns4:CreateCarryInResponse xmlns:ns4="http://gsxws.apple.com/types/core/asp">
+         <CreateCarryInResponse>
+            <operationId>teHHI9DcQcLsTBtI7+jdLqmOFqFrRaMZ</operationId>
+            <repairConfirmation>
+               <confirmationNumber>G112477331</confirmationNumber>
+               <diagnosticDescription>Diagnostic Code Not Entered</diagnosticDescription>
+               <diagnosticEventNumber>800204262010153816</diagnosticEventNumber>
+               <diagnosticEventEndResult>FAILED</diagnosticEventEndResult>
+               <parts>
+                  <availability/>
+                  <currency>BRL</currency>
+                  <netPrice>BRL 23.50</netPrice>
+                  <partNumber>076-1080</partNumber>
+                  <partType/>
+                  <quantity>1</quantity>
+               </parts>
+               <parts>
+                  <availability/>
+                  <currency>BRL</currency>
+                  <netPrice>BRL 11.50</netPrice>
+                  <partNumber>661-3226</partNumber>
+                  <partType/>
+                  <quantity>1</quantity>
+               </parts>
+               <totalFromOrder>USD 38.00</totalFromOrder>
+               <icmsTax>3.00</icmsTax>
+               <pisTax>3.00</pisTax>
+               <ipiTax>3.00</ipiTax>
+               <icmsStTax>3.00</icmsStTax>
+               <cofinsTax>2.00</cofinsTax>
+               <issTax>2.00</issTax>
+               <vatTax>3.00</vatTax>
+               <outcome>STOP/HOLD/MSG</outcome>
+               <messages>The repair would go on Component Check Review.</messages>
+               <messages>Your accidental damage coverage under the AppleCare+ 
+               contract will be reduced by one incident, but you will not incur a fee 
+               for this repair.</messages>
+               <availableRepairStrategies>
+                 <availableRepairStrategy>
+                 	Return Before Replace
+                 </availableRepairStrategy>
+                 <availableRepairStrategy>
+                 	Mail-in
+                 </availableRepairStrategy>
+              </availableRepairStrategies>
+            </repairConfirmation>
+         </CreateCarryInResponse>
+      </ns4:CreateCarryInResponse>
+   </S:Body>
+</S:Envelope>

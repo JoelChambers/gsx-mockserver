@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+     <ns3:ComponentCheckResponse xmlns:ns2="http://asp.core.endpoint.ws.gsx.ist.apple.com/" xmlns:ns3="http://gsxws.apple.com/elements/core/asp" xmlns:ns4="http://gsxws.apple.com/elements/global" xmlns:ns5="http://gsxws.apple.com/elements/core/asp/am" xmlns:ns6="http://gsxws.apple.com/elements/core">
+         <ComponentCheckResponse>
+            <operationId>170ae1310160353346</operationId>
+            <componentCheckDetails>
+            	<componentDetails>
+            		<componentCode>MLB</componentCode>
+            		<componentDescription>Logic Board</componentDescription>
+            	</componentDetails>
+            	<dispatchID>G153220777</dispatchID>
+            	<eligibility>Y</eligibility>
+            </componentCheckDetails>
+         </ComponentCheckResponse>
+      </ns3:ComponentCheckResponse>
+   </S:Body>
+</S:Envelope>

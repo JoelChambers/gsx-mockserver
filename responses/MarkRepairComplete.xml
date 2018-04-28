@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns4:MarkRepairCompleteResponse xmlns:ns4="http://gsxws.apple.com/types/core/asp">
+         <MarkRepairCompleteResponse>
+            <operationId>ykNJV0zy368v5uqnUYthI63zNSeip8/J</operationId>
+            <repairConfirmationNumbers>
+               <repairConfirmationNumber>$dispatchId</repairConfirmationNumber>
+               <outcome>STOP/HOLD</outcome>
+               <messages>Some Message1</messages>
+               <messages>Some Message2</messages>
+           </repairConfirmationNumbers>
+           <repairConfirmationNumbers>
+               <repairConfirmationNumber>$dispatchId</repairConfirmationNumber>
+               <outcome>HOLD</outcome>
+               <messages>Some Message1</messages>
+               <messages>Some Message2</messages>
+           </repairConfirmationNumbers>
+           <repairConfirmationNumbers>
+               <repairConfirmationNumber>$dispatchId</repairConfirmationNumber>
+               <outcome>HOLD</outcome>
+               <messages>Some Message1</messages>
+               <messages>Some Message2</messages>
+           </repairConfirmationNumbers>
+       </MarkRepairCompleteResponse>
+   </ns4:MarkRepairCompleteResponse>
+</S:Body>
+</S:Envelope>

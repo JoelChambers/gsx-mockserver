@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns4:UpdateCarryInResponse xmlns:ns2="http://asp.core.endpoint.ws.gsx.ist.apple.com/" xmlns:ns3="http://gsxws.apple.com/elements/global" xmlns:ns4="http://gsxws.apple.com/elements/core/asp" xmlns:ns5="http://gsxws.apple.com/elements/core/asp/am" xmlns:ns6="http://gsxws.apple.com/elements/core">
+         <UpdateCarryInResponse>
+            <operationId>620271310148985581</operationId>
+            <repairConfirmation>
+               <confirmationNumber>$repairConfirmationNumber</confirmationNumber>
+               <totalFromOrder>BRL 0.00</totalFromOrder>
+               <icmsTax>3.00</icmsTax>
+               <pisTax>3.00</pisTax>
+               <ipiTax>3.00</ipiTax>
+               <icmsStTax>3.00</icmsStTax>
+               <cofinsTax>2.00</cofinsTax>
+               <issTax>2.00</issTax>
+               <vatTax>0.0</vatTax>
+               <parts>
+                  <partNumber>661-5000</partNumber>
+                  <partType/>
+                  <netPrice>BRL 0.00</netPrice>
+                  <currency>BRL</currency>
+                  <availability/>
+                  <quantity>1</quantity>
+               </parts>
+               <parts>
+                  <partNumber>661-5321</partNumber>
+                  <partType/>
+                  <netPrice>BRL 0.00</netPrice>
+                  <currency>BRL</currency>
+                  <availability/>
+                  <quantity>1</quantity>
+               </parts>
+               <diagnosticEventNumber>895642387834567</diagnosticEventNumber>
+               <diagnosticEventEndResult>FAILED</diagnosticEventEndResult>
+               <outcome>STOP/HOLD/MSG</outcome>
+               <messages>Some Message1</messages>
+               <messages>Some Message2</messages>
+            </repairConfirmation>
+            <communicationMessage/>
+         </UpdateCarryInResponse>
+      </ns4:UpdateCarryInResponse>
+   </S:Body>
+</S:Envelope>

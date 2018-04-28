@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns4:UpdateGeneralEscalationResponse xmlns:ns2="http://iphone.endpoint.ws.gsx.ist.apple.com/" xmlns:ns3="http://gsxws.apple.com/elements/global" xmlns:ns4="http://gsxws.apple.com/elements/iphone">
+         <UpdateGeneralEscalationResponse>
+            <operationId>91f5a1310158382330</operationId>
+            <escalationConfirmation>
+               <updateStatus>SUCCESS</updateStatus>
+               <updateTimestamp>12/18/12 11:10 AM</updateTimestamp>
+            </escalationConfirmation>
+         </UpdateGeneralEscalationResponse>
+      </ns4:UpdateGeneralEscalationResponse>
+   </S:Body>
+</S:Envelope>

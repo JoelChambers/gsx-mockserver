@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns4:GeneralEscalationDetailsLookupResponse xmlns:ns2="http://asp.core.endpoint.ws.gsx.ist.apple.com/" xmlns:ns3="http://gsxws.apple.com/elements/global" xmlns:ns4="http://gsxws.apple.com/elements/core/asp" xmlns:ns5="http://gsxws.apple.com/elements/core/asp/am" xmlns:ns6="http://gsxws.apple.com/elements/core">
+         <GeneralEscalationDetailsLookupResponse>
+            <operationId>0b8591308861450587</operationId>
+            <lookupResponseData>
+               <escalationId>785749</escalationId>
+               <escalationType>GSX Help</escalationType>
+               <escalationContext>
+                  <contextType>1</contextType>
+                  <contextID>GB020N5TZ3A</contextID>
+               </escalationContext>
+               <escalationStatus>OPEN</escalationStatus>
+               <issueType>Account Management Question</issueType>
+               <escalationTo>Apple</escalationTo>
+               <createdBy>dummy tester</createdBy>
+               <createTimestamp>08/24/12 09:48 AM</createTimestamp>
+               <lastViewedBy>global AdminP1</lastViewedBy>           
+               <lastModifiedBy>dummy tester</lastModifiedBy>
+               <escalationAge>1day 4hours 7minutes</escalationAge>
+               <caseDetails>
+                  <caseId>10000144395733</caseId>
+                  <caseTitle>Repair Extension Program Issue</caseTitle>
+                  <caseSummary>
+                  	CUSTOMER: GSX Tech AMR
+                  	Activation Issues on iOS Devices After Repair
+                  	Has the repair been marked complete?
+                  </caseSummary>
+               </caseDetails>
+               <escalationNotes>
+                  <note>MY NOTES HERE</note>
+               </escalationNotes>
+               <chatTranscripts>
+                  <chatTranscript>
+                  	Sam: Thanks for contacting the RTC. My name is Sam. How can I help you today?
+                  	GSX Tech AMR: Hello!
+                  	GSX Tech AMR:I'm having some issue repairing a device
+                  	Sam: Sure. How can I help you today
+                  </chatTranscript>
+                  <chatTranscript>
+                  	TEMS AC User1: Thanks for contacting Agreement Admin. My name is TEMS AC User1. How can I help you?
+                  	GSX Tech AMR: Hello!
+                  	GSX Tech AMR:I'm having some issue running diagnostic in a device. 
+                  	TEMS AC User1: Sure. 
+                  	GSX Tech AMR: Thanks for assisting me in this issue
+                  </chatTranscript>
+               </chatTranscripts>
+            </lookupResponseData>
+         </GeneralEscalationDetailsLookupResponse>
+      </ns4:GeneralEscalationDetailsLookupResponse>
+   </S:Body>
+</S:Envelope>

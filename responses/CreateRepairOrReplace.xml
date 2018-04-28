@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns3:CreateRepairOrReplaceResponse xmlns:ns2="http://asp.core.endpoint.ws.gsx.ist.apple.com/" 
+              xmlns:ns3="http://gsxws.apple.com/elements/core/asp" 
+              xmlns:ns4="http://gsxws.apple.com/elements/global" 
+              xmlns:ns5="http://gsxws.apple.com/elements/core" 
+              xmlns:ns6="http://gsxws.apple.com/elements/core/asp/am" 
+              xmlns:ns7="http://gsxws.apple.com/types/core/asp">
+         <CreateRepairOrReplaceResponse>
+            <operationId>734d2c566e1280959479183</operationId>
+            <repairConfirmation>
+               <confirmationNumber>G245605424</confirmationNumber>
+               <dcAddress>
+                  <vendorName>Internal Acct for for Ceva RC - AU</vendorName>
+                  <street>Unit 9, Discovery Cove,1801, B</street>
+                  <county>Madera</county>
+                  <city>Banksmeadow</city>
+                  <state>NSW</state>
+                  <countryName>Australia</countryName>
+                  <zipCode>2019</zipCode>
+                  <companyName>Apple</companyName>
+               </dcAddress>
+               <totalFromOrder>BRL 0.00</totalFromOrder>
+               <icmsTax>3.00</icmsTax>
+               <pisTax>3.00</pisTax>
+               <ipiTax>3.00</ipiTax>
+               <icmsStTax>3.00</icmsStTax>
+               <cofinsTax>2.00</cofinsTax>
+               <issTax>2.00</issTax>
+               <vatTax>0.0</vatTax>
+               <parts>
+                  <partNumber>S3750LL/A</partNumber>
+                  <partType>Other</partType>
+                  <netPrice>BRL 0.00</netPrice>
+                  <currency>BRL</currency>
+                  <availability>Y</availability>
+                  <quantity>1></quantity>
+               </parts>
+               <loanerParts>
+                  <partNumber>S3750LL/A</partNumber>
+                  <serialNumber></serialNumber>
+                  <IMEINumber></IMEINumber>                 
+               </loanerParts>   
+               <diagnosticEventNumber>895642387834567</diagnosticEventNumber>
+               <diagnosticEventEndResult>FAILED</diagnosticEventEndResult>
+               <outcome>STOP/HOLD/MSG</outcome>
+               <messages>Some Message1</messages>
+               <messages>Some Message2</messages>
+               <availableRepairStrategies>
+                 <availableRepairStrategy>
+                 	Return Before Replace
+                 </availableRepairStrategy>
+                 <availableRepairStrategy>
+                 	Mail-in
+                 </availableRepairStrategy>
+              </availableRepairStrategies>
+            </repairConfirmation>
+         </CreateRepairOrReplaceResponse>
+      </ns3:CreateRepairOrReplaceResponse>
+   </S:Body>
+</S:Envelope>

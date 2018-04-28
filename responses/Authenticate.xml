@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns1:AuthenticateResponse xmlns:ns1="http://gsxws.apple.com/elements/global">
+         <AuthenticateResponse>
+            <operationId>teHHI9DcQcLsTBtI7+jdLqmOFqFrRaMZ</operationId>
+            <userSessionId>Sdt7tXp2XytTEVwHBeDx6lHTXI3w9s+M</userSessionId>
+         </AuthenticateResponse>
+      </ns1:AuthenticateResponse>
+   </S:Body>
+</S:Envelope>

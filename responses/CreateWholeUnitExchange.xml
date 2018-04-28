@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns4:CreateWholeUnitExchangeResponse xmlns:ns2="http://asp.core.endpoint.ws.gsx.ist.apple.com/" xmlns:ns3="http://gsxws.apple.com/elements/global" xmlns:ns4="http://gsxws.apple.com/elements/core/asp" xmlns:ns5="http://gsxws.apple.com/elements/core/asp/am" xmlns:ns6="http://gsxws.apple.com/elements/core">
+         <CreateWholeUnitExchangeResponse>
+            <operationId>79ebc1310162214229</operationId>
+            <repairConfirmation>
+               <confirmationNumber>G200404764</confirmationNumber>
+               <totalFromOrder>BRL 355.95</totalFromOrder>
+               <icmsTax>BRL 3.00</icmsTax>
+               <pisTax>BRL 3.00</pisTax>
+               <ipiTax>BRL 3.00</ipiTax>
+               <icmsStTax>BRL 3.00</icmsStTax>
+               <cofinsTax>BRL 2.00</cofinsTax>
+               <issTax>BRL 2.00</issTax>
+               <vatTax>0.0</vatTax>
+               <parts>
+                  <partNumber>661-5571</partNumber>
+                  <partType/>
+                  <netPrice>BRL 349.00</netPrice>
+                  <currency>BRL</currency>
+                  <availability/>
+                  <quantity>1</quantity>
+               </parts>
+               <parts>
+                  <partNumber>ACSH08</partNumber>
+                  <partType/>
+                  <netPrice>BRL 6.95</netPrice>
+                  <currency>BRL</currency>
+                  <availability/>
+                  <quantity>1</quantity>
+               </parts>
+               <outcome>STOP/HOLD</outcome>
+               <messages>Some Message1</messages>
+               <messages>Some Message2</messages>
+               <applicableRepairStrategies>
+                 <applicableRepairStrategy>
+                 	Return Before Replace
+                 </applicableRepairStrategy>
+                 <applicableRepairStrategy>
+                 	Mail-in
+                 </applicableRepairStrategy>
+              </applicableRepairStrategies>
+            </repairConfirmation>
+         </CreateWholeUnitExchangeResponse>
+      </ns4:CreateWholeUnitExchangeResponse>
+   </S:Body>
+</S:Envelope>

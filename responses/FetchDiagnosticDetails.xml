@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://gsxws.apple.com/elements/global">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <glob:FetchDiagnosticDetailsResponse>
+         <FetchDiagnosticDetailsResponseData>
+            <operationId></operationId>
+            <diagnosticDetailsResponseData>
+               <diagnosticTestContext>
+                  <testContext>
+                      <key>Serial Number</key>
+                      <value>C02DN8KJDHJF</value>
+                   </testContext>
+                   <testContext>
+                      <key>Diagnostic Event Number</key>
+                      <value>47165961006635015191936</value>
+                   </testContext>
+                   <testContext>
+                      <key>Event Start Date</key>
+                      <value>16-JAN-15 06:43:58</value>
+                   </testContext>
+                   <testContext>
+                      <key>Event Completion Date</key>
+                      <value>16-JAN-15 06:43:58</value>
+                   </testContext>
+                   <testContext>
+                      <key>Service Account ID</key>
+                      <value>0000053729</value>
+                   </testContext>
+                   <testContext>
+                      <key>Shp-To</key>
+                      <value>0000053729</value>
+                   </testContext>
+                   <testContext>
+                      <key>modulePassCount</key>
+                      <value>56</value>
+                   </testContext>
+                   <testContext>
+                      <key>Suite Name</key>
+                      <value>Mobile Resource Inspector</value>
+                   </testContext>
+                   <testContext>
+                      <key>Requested Channel</key>
+                      <value>GSX</value>
+                   </testContext>
+                   <testContext>
+                      <key>Diagnostic Event End Result</key>
+                      <value>WARNING</value>
+                   </testContext> 
+               </diagnosticTestContext>    
+               <diagnosticTestResults>
+               		<testResultsData>
+		                  <testName>Checksum Test</testName>
+		                  <testStatus>PASSED</testStatus>
+		                  <moduleName>BootROM</moduleName>
+		                  <moduleLocation>BootROM</moduleLocation>
+		            </testResultsData>
+		       		<testResultsData>
+		                  <testName>FW GUID MAC Address Checksum Tes</testName>
+		                  <testStatus>PASSED</testStatus>
+		                  <moduleName>BootROM</moduleName>
+		                  <moduleLocation>BootROM</moduleLocation>
+		            </testResultsData>
+		            <testResultsData>
+		                  <testName>Sensor Check Test</testName>
+		                  <testStatus>PASSED</testStatus>
+		                  <moduleName>SMC</moduleName>
+		                  <moduleLocation>SMC</moduleLocation>
+		            </testResultsData>
+		            <testResultsData>
+		                  <testName>Link Speed Verify Test</testName>
+		                  <testStatus>WARNING</testStatus>
+		                  <moduleName>WiFi</moduleName>
+		                  <moduleLocation>WiFi</moduleLocation>
+		            </testResultsData>
+		            <testResultsData>
+		                  <testName>Presence Test</testName>
+		                  <testStatus>PASSED</testStatus>
+		                  <moduleName>EthernetController</moduleName>
+		                  <moduleLocation>EthernetController</moduleLocation>
+		            </testResultsData>           
+               </diagnosticTestResults>
+               <diagnosticProfileData>
+                   <profileType>MAC</profileType>
+                  <deviceProfile>
+                      <key>Current OS Version</key>
+                      <value>10.8.2</value>
+                   	</deviceProfile>
+                   	<deviceProfile>
+                      <key>Hardware Model</key>
+                      <value>iMac14,4</value>
+                   	</deviceProfile>
+               </diagnosticProfileData>
+            </diagnosticDetailsResponseData>
+            <communicationMessage>There are priority messages pending</communicationMessage>
+         </FetchDiagnosticDetailsResponseData>
+      </glob:FetchDiagnosticDetailsResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

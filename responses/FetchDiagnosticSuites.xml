@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+          xmlns:glob="http://gsxws.apple.com/elements/global">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <glob:FetchDiagnosticSuitesResponse>
+         <FetchDiagnosticSuitesResponseData>
+            <operationId>123456</operationId>
+            <diagnosticSuitesResponseData>
+               <diagnosticSuiteDetails>
+                   <suiteId>1234</suiteId>
+                   <suiteName>Mac Resource Inspector</suiteName>
+               </diagnosticSuiteDetails>    
+               <diagnosticSuiteDetails>
+                   <suiteId>5678</suiteId>
+                   <suiteName>Quick Test</suiteName>
+               </diagnosticSuiteDetails>      
+            </diagnosticSuitesResponseData>
+            <communicationMessage/>
+         </FetchDiagnosticSuitesResponseData>
+      </glob:FetchDiagnosticSuitesResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
