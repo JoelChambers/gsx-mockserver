@@ -78,4 +78,8 @@ if __name__ == '__main__':
 
     with HTTPServer((args.address, args.port), Handler) as httpd:
         print('GSX mock server serving on http://%s:%d' % (args.address, args.port))
-        httpd.serve_forever()
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print('GSX mock server shutting down...')
+            httpd.shutdown()
