@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import os
+import time
 import argparse
 from glob import glob
 from io import BytesIO
@@ -27,6 +28,10 @@ class Handler(BaseHTTPRequestHandler):
             msg = 'Sorry, unkown action %s' % self.action
             self.send_error(404, msg)
             return
+
+        if os.getenv('GSX_THROTTLE'):
+            self.log_message('Throttling for %d' % os.getenv('GSX_THROTTLE'))
+            time.sleep(os.getenv('GSX_THROTTLE'))
 
         self.send_response(200)
         l = int(self.headers['Content-Length'])
@@ -61,7 +66,6 @@ def validate_responses():
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
     parser = argparse.ArgumentParser()
     parser.add_argument('-a', '--address',
         help='Address to host server on', default='localhost')

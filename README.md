@@ -9,14 +9,15 @@ The mock responses are collected from example XML snippets in Apple's [API docum
 Installation
 ============
 
-The server has only one external dependency - `lxml` which is used to parse the request XML. It should work with both Python 3 and 2, but is primarily developed and tested on 3.
+The server requires Python 3 and has only one external dependency - `lxml` which is used to parse the request XML.
 
 	$ pip install lxml
 	$ python serve.py
 	Validating XML responses...
 	GSX mock server serving on http://localhost:8080
 
-You can also specify the port and address to serve on with the `-p` and `-a` arguments - check `-h` for the details.
+You can also specify the port and address to serve on with the `-p` and `-a` arguments - check `-h` for the details. Use the `GSX_THROTTLE=X` environment
+variable to add a X-second delay to each API response.
 
 Usage
 =====
