@@ -30,8 +30,9 @@ class Handler(BaseHTTPRequestHandler):
             return
 
         if os.getenv('GSX_THROTTLE'):
-            self.log_message('Throttling for %d' % os.getenv('GSX_THROTTLE'))
-            time.sleep(os.getenv('GSX_THROTTLE'))
+            t = int(os.getenv('GSX_THROTTLE'))
+            self.log_message('Throttling for %d' % t)
+            time.sleep(t)
 
         self.send_response(200)
         l = int(self.headers['Content-Length'])
