@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+    <ns4:RepairLookupResponse xmlns:ns4="http://gsxws.apple.com/types/core/asp">
+        <RepairLookupResponse>
+            <operationId>ytoEtMr1TsLwgQ22UJw79RvIT0TkYmvq</operationId>
+        <lookupResponseData>
+            <repairLookup>
+                <createdOn>02/14/08</createdOn>
+                <customerName>Jay,Javier Vilanova</customerName>
+                <purchaseOrderNumber>1536274</purchaseOrderNumber>
+                <repairConfirmationNumber>108845939</repairConfirmationNumber>
+                <repairStatus>Repair released from processing</repairStatus>
+                <repairType>Carry-in</repairType>
+                <repairNumber>11223344</repairNumber>
+                <isACPlusConsumed>N</isACPlusConsumed>
+                <acPlusFlag>N</acPlusFlag>
+                <consumerLawApplied>RFD</consumerLawApplied>
+            </repairLookup>
+            <repairLookup>
+                <createdOn>04/18/08</createdOn>
+                <customerName>Jay,Javier Vilanova</customerName>
+                <purchaseOrderNumber>1536274</purchaseOrderNumber>
+                <repairConfirmationNumber>109852939</repairConfirmationNumber>
+                <repairStatus>Repair released from processing</repairStatus>
+                <repairType>Carry-in</repairType>
+                <repairNumber>78652628</repairNumber>
+                <isACPlusConsumed>N</isACPlusConsumed>
+                <acPlusFlag>N</acPlusFlag>
+                <consumerLawApplied>RFD</consumerLawApplied>
+            </repairLookup>
+        <replacementDetails>
+            <serialDetails>
+            <serialNumber>F78PGG20G5MT</serialNumber>
+            <alternateDeviceId>10884593912345</alternateDeviceId>
+            <data1>10884593978986</data1>
+            <serialStatus>Active</serialStatus>
+            <serialStatusDate>06/14/08</serialStatusDate>
+            </serialDetails>
+            <serialDetails>
+            <serialNumber>F78PGG98DTTN</serialNumber>
+            <alternateDeviceId>98254599622351</alternateDeviceId>
+            <data1>98254599627625</data1>
+            <serialStatus>Replaced</serialStatus>
+            <serialStatusDate>03/14/08</serialStatusDate>
+            </serialDetails>
+            <serialDetails>
+            <serialNumber>F78PGK88DTTP</serialNumber>
+            <alternateDeviceId>98259814628811</alternateDeviceId>
+            <data1>98259814627653</data1>
+            <serialStatus>Original</serialStatus>
+            <serialStatusDate>01/14/08</serialStatusDate>
+            </serialDetails>
+        </replacementDetails>
+            </lookupResponseData>
+        </RepairLookupResponse>
+    </ns4:RepairLookupResponse>
+</S:Body>
+</S:Envelope>
