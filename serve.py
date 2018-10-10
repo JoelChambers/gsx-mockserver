@@ -1,18 +1,17 @@
 #!/usr/bin/env python
 
+import re
 import os
 import time
 import argparse
 from glob import glob
-from io import BytesIO
 from string import Template
+import xml.etree.ElementTree as ET
 
 try:
     from http.server import BaseHTTPRequestHandler, HTTPServer
 except ImportError:
     from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
-
-from lxml import etree
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -31,38 +30,51 @@ class Handler(BaseHTTPRequestHandler):
 
         if os.getenv('GSX_THROTTLE'):
             t = int(os.getenv('GSX_THROTTLE'))
-            self.log_message('Throttling for %d' % t)
+            self.log_message('Throttling for %d seconds' % t)
             time.sleep(t)
+        
+        try:
+            l = int(self.headers['Content-Length'])
+            xml = self.rfile.read(l).decode('utf8')
+            context = {}
 
-        self.send_response(200)
-        l = int(self.headers['Content-Length'])
-        request = etree.parse(BytesIO(self.rfile.read(l)))
+            for v in re.findall(r'<(\w+)>(\w+)', xml, re.I + re.M):
+                k = '$' + v[0]
+                context[k] = v[1]
 
-        print(etree.tostring(request, pretty_print=True).decode())
+            print("****** REQUEST ****** (%s) \n%s" % (context, xml))
 
-        context = {}
-        r = request.xpath('//repairData|//requestData|//MarkRepairCompleteRequest')
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/xml; charset="UTF-8"')
+            self.end_headers()
 
-        if r:
-            for i in r[0].iterchildren():
-                context[i.tag] = i.text
+            def reflect(m):
+                k = '$' + m.group(1)
+                if context.get(k):
+                    return '<%s>%s' % (k, context[k])
+                
+                return m.group(0)
 
-        self.send_header('Content-Type', 'text/xml; charset="UTF-8"')
-        self.end_headers()
+            with open(self.path, 'r') as f:
+                xml = f.read()
+                xml = re.sub(r'<(\w+)>\w+', reflect, xml, re.I + re.M)
+                xml = Template(xml).safe_substitute(context)
+                print("****** RESPONSE ****** \n%s" % xml)
 
-        with open(self.path, 'r') as f:
-            xml = f.read()
-            xml = Template(xml).safe_substitute(context)
-            self.send_header('Content-Length', len(xml))
-            self.wfile.write(xml.encode())
-            print(xml)
+                self.send_header('Content-Length', len(xml))
+                self.wfile.write(xml.encode())
+
+        except Exception as e:
+            print(e)
+            self.send_error(500, 'Invalid request')
+            return
 
 
 def validate_responses():
     for r in glob('responses/*.xml'):
         try:
-            etree.parse(r)
-        except etree.XMLSyntaxError:
+            ET.parse(r)
+        except ET.ParseError:
             raise Exception('Invalid XML response: %s' % r)
 
 
