@@ -5,26 +5,28 @@ import os
 import time
 import argparse
 from glob import glob
+from xml.dom import minidom
 from string import Template
-import xml.etree.ElementTree as ET
 
 try:
     from http.server import BaseHTTPRequestHandler, HTTPServer
 except ImportError:
     from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 
+DEFAULT_PORT = 8080
+TAGPATTERN = re.compile(r'<(\w+)>(\w+)', re.I + re.M)
 
 class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         assert self.headers['SOAPAction'], 'Invalid request'
 
-        self.action = self.headers['SOAPAction'].strip('"')
-        self.path = 'responses/%s.xml' % self.action
-        self.log_message(self.action)
+        action = self.headers['SOAPAction'].strip('"')
+        path = 'responses/%s.xml' % action
+        self.log_message(action)
 
-        if not os.path.exists(self.path):
-            msg = 'Sorry, unkown action %s' % self.action
+        if not os.path.exists(path):
+            msg = 'Sorry, unkown action %s' % action
             self.send_error(404, msg)
             return
 
@@ -34,15 +36,17 @@ class Handler(BaseHTTPRequestHandler):
             time.sleep(t)
         
         try:
+            context = {}
             l = int(self.headers['Content-Length'])
             xml = self.rfile.read(l).decode('utf8')
-            context = {}
+            dom = minidom.parseString(xml)
 
-            for v in re.findall(r'<(\w+)>(\w+)', xml, re.I + re.M):
+            # Build a dictionary of all simple text elements
+            for v in re.findall(TAGPATTERN, xml):
                 k = '$' + v[0]
                 context[k] = v[1]
 
-            print("****** REQUEST ****** (%s) \n%s" % (context, xml))
+            print("****** REQUEST ****** (%s) \n%s" % (context, dom.toprettyxml('  ')))
 
             self.send_response(200)
             self.send_header('Content-Type', 'text/xml; charset="UTF-8"')
@@ -51,13 +55,13 @@ class Handler(BaseHTTPRequestHandler):
             def reflect(m):
                 k = '$' + m.group(1)
                 if context.get(k):
-                    return '<%s>%s' % (k, context[k])
+                    return '<%s>%s' % (m.group(1), context[k])
                 
                 return m.group(0)
 
-            with open(self.path, 'r') as f:
+            with open(path, 'r') as f:
                 xml = f.read()
-                xml = re.sub(r'<(\w+)>\w+', reflect, xml, re.I + re.M)
+                xml = re.sub(TAGPATTERN, reflect, xml, re.I + re.M)
                 xml = Template(xml).safe_substitute(context)
                 print("****** RESPONSE ****** \n%s" % xml)
 
@@ -65,25 +69,30 @@ class Handler(BaseHTTPRequestHandler):
                 self.wfile.write(xml.encode())
 
         except Exception as e:
+            self.send_error(500, 'Invalid request: %s' % e)
             print(e)
-            self.send_error(500, 'Invalid request')
-            return
 
 
 def validate_responses():
+    """
+    Checks that the response XML files are parseable
+    """
     for r in glob('responses/*.xml'):
         try:
-            ET.parse(r)
-        except ET.ParseError:
+            minidom.parse(r)
+        except Exception:
             raise Exception('Invalid XML response: %s' % r)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-a', '--address',
-        help='Address to host server on', default='localhost')
+        help='Address to host server on',
+        default='localhost')
     parser.add_argument('-p', '--port',
-        help='Port number to host server on', default=8080, type=int)
+        help='Port number to host server on [%s]' % DEFAULT_PORT,
+        default=DEFAULT_PORT,
+        type=int)
     args = parser.parse_args()
 
     print('Validating XML responses...')
