@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns3:RepairStatusResponse xmlns:ns2="http://asp.core.endpoint.ws.gsx.ist.apple.com/" xmlns:ns3="http://gsxws.apple.com/elements/core/asp" xmlns:ns4="http://gsxws.apple.com/elements/global" xmlns:ns5="http://gsxws.apple.com/elements/core" xmlns:ns6="http://gsxws.apple.com/elements/core/asp/am">
+         <RepairStatusResponse>
+            <operationId>bc17a472241309393228823</operationId>
+            <repairStatus>
+               <repairConfirmationNumber>G200378865</repairConfirmationNumber>
+               <repairNumber>030054233501</repairNumber>
+               <repairStatus>Credit Review - Contact Accounts Receivable</repairStatus>
+            </repairStatus>
+         </RepairStatusResponse>
+      </ns3:RepairStatusResponse>
+   </S:Body>
+</S:Envelope>

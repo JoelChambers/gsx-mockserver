@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns6:RepairDetailsResponse xmlns:ns2="http://asp.core.endpoint.ws.gsx.ist.apple.com/" xmlns:ns3="http://gsxws.apple.com/elements/global" xmlns:ns4="http://gsxws.apple.com/elements/core/asp" xmlns:ns5="http://gsxws.apple.com/elements/core/asp/am" xmlns:ns6="http://gsxws.apple.com/elements/core">
+         <RepairDetailsResponse>
+            <operationId>dXS2Oo40J6LHY7yPPnNLQia</operationId>
+            <lookupResponseData>
+               <repairConfirmationNumber>121822473</repairConfirmationNumber>
+               <soldToCode>0000033523</soldToCode>
+               <warrantyDescription>Apple Limited Warranty</warrantyDescription>
+               <dispatchId>G121822473</dispatchId>
+               <sroNumber>030052423540</sroNumber>
+               <serialNumber>GB020N3JZ3A</serialNumber>
+               <dispatchSentDate>2011-04-12 04:04:44 -08:00</dispatchSentDate>
+               <coverageStatusDescription>Apple Limited Warranty</coverageStatusDescription>
+               <productName>iPad</productName>
+               <configuration>IPAD,WIFI,64GB</configuration>
+               <purchaseOrderNumber>1190371</purchaseOrderNumber>
+               <referenceNumber>2123123</referenceNumber>
+               <isACPlusConsumed>N</isACPlusConsumed>
+               <microInspectionRequired>Y</microInspectionRequired>
+               <notes>Customer Reported Symptom:Will not boot past the apple logo.
+ -Was working fine yesterday morning and by the afternoon after sitting on the desk all day would not boot back up.
+Service Provider Diagnosis:Issue confirmed, unable to boot or restore.
+Notes:
+Matt Wagner-800-636-3626Address Cosmetic Damage? No</notes>
+               <primaryAddress>
+                  <addressLine1>21533 NE 143RD PL</addressLine1>
+                  <country>US</country>
+                  <zipCode>98077-5814</zipCode>
+                  <county>Madera</county>
+                  <region>005</region>
+                  <city>WOODINVILLE</city>
+                  <firstName>Kyle</firstName>
+                  <lastName>Doan</lastName>
+                  <primaryPhone>(541) 968-0662</primaryPhone>
+                  <state>NY</state>
+                  <emailAddress>a@test.com</emailAddress>
+               </primaryAddress>
+               <partsInfo>
+                  <partNumber>661-5571</partNumber>
+                  <partDescription>iPad, Wi-Fi, 64GB</partDescription>
+                  <partType>MOD</partType>      
+                  <netPrice>235</netPrice>
+                  <currency>USD</currency>
+                  <pricingOption>BAT</pricingOption>
+                  <pricingOptionDesc>Battery Replacement</pricingOptionDesc>   
+                  <partCoverageDescription>Apple Limited Warranty</partCoverageDescription>
+                  <orderStatus>Return Order Received</orderStatus>
+                  <orderStatusCode>RCVD</orderStatusCode>
+                  <orderStatusDate>2011-04-14 09:14:04 -08:00</orderStatusDate>
+                  <returnStatus>Known Bad Board</returnStatus>
+                  <returnCode>KBB</returnCode>
+                  <orderNumber>7173065714</orderNumber>
+                  <orderLineNumber>31</orderLineNumber>
+                  <isSerialized>N</isSerialized>               
+               </partsInfo>
+               <partsInfo>
+                  <partNumber>S4049Z/A</partNumber>
+                  <partDescription>IPAD FLAT RATE 64GB WI-FI CHG-INT</partDescription>
+                  <partType>CNTC</partType> 
+                  <netPrice>215</netPrice>
+                  <currency>USD</currency>
+                  <partCoverageDescription>Out Of Warranty (No Coverage)</partCoverageDescription>
+                  <orderStatus>Outbound Order Created</orderStatus>
+                  <orderStatusCode>ORDC</orderStatusCode>
+                  <orderStatusDate>2012-04-30 05:16:28 -07:00</orderStatusDate>
+                  <returnStatus>NRET</returnStatus>
+                  <returnCode>NRET</returnCode>
+                  <orderNumber>7148187912</orderNumber>
+                  <orderLineNumber>32</orderLineNumber>
+                  <isSerialized>N</isSerialized>
+               </partsInfo>
+               <partsInfo>
+                  <partNumber>ACSH14</partNumber>
+                  <partDescription>WHOLE UNIT MAIL IN SHIPPING CHARGE</partDescription>
+                  <partType>SHIP</partType>
+                  <netPrice>205</netPrice>
+                  <currency>USD</currency>
+                  <partCoverageDescription>Out Of Warranty (No Coverage)</partCoverageDescription>
+                  <orderStatus>Outbound Order Created</orderStatus>
+                  <orderStatusCode>ORDC</orderStatusCode>
+                  <orderStatusDate>2012-04-30 01:26:48 -07:00</orderStatusDate>
+                  <returnStatus>NRET</returnStatus>
+                  <returnCode>NRET</returnCode>
+                  <orderNumber>7148187912</orderNumber>
+                  <orderLineNumber>33</orderLineNumber>
+                  <isSerialized>N</isSerialized>
+               </partsInfo>
+               <partsInfo>
+                  <partNumber>S4049Z/A</partNumber>
+                  <partDescription>IPAD FLAT RATE 64GB WI-FI CHG-INT</partDescription>
+                  <partType>DEP</partType>
+                  <netPrice>349</netPrice>
+                  <currency>USD</currency>
+                  <orderStatus>Outbound Order Created</orderStatus>
+                  <orderStatusCode>ORDC</orderStatusCode>
+                  <orderStatusDate>2012-04-30 18:29:58 -07:00</orderStatusDate>
+                  <orderNumber>7148187912</orderNumber>
+                  <orderLineNumber>34</orderLineNumber>
+                  <isSerialized>N</isSerialized>
+               </partsInfo>                 
+               <acPlusFlag>N</acPlusFlag>
+               <consumerLawApplied>RFD</consumerLawApplied>
+               <repairFailureNotes></repairFailureNotes>
+               <returnRepairedUnitToCustomer>N</returnRepairedUnitToCustomer>
+                 <questions>
+                  <questionDetails>
+                  <questionPhrase>What is the color of the fluid</questionPhrase>
+                  <answerPhrase>Blue</answerPhrase>
+                  </questionDetails>
+                  <questionDetails>
+                  <questionPhrase>Was the issue related to fluid leaking from the device</questionPhrase>
+                  <answerPhrase>Yes</answerPhrase>
+                  </questionDetails>
+                </questions>
+            </lookupResponseData>
+            <communicationMessage/>
+         </RepairDetailsResponse>
+      </ns6:RepairDetailsResponse>
+   </S:Body>
+</S:Envelope>

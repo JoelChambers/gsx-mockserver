@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns4:UpdateSerialNumberResponse xmlns:ns4="http://gsxws.apple.com/types/core/asp">
+         <UpdateSerialNumberResponse>
+            <operationId>y3mlyaSgQpgGNUoZJAuQrO3Kl4td7SX3</operationId>
+            <repairConfirmation>
+               <confirmationNumber>G245409826</confirmationNumber>
+               <returnMessage>Serial Number Update is successful for the repair.</returnMessage>
+               <warrantyClaimsExceptionPdfData>XOP_id_to_some_attached_file</warrantyClaimsExceptionPdfData>
+            </repairConfirmation>
+         </UpdateSerialNumberResponse>
+      </ns4:UpdateSerialNumberResponse>
+   </S:Body>
+</S:Envelope>
